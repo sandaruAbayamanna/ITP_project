@@ -115,10 +115,11 @@ handleSearchArea =(e) =>{
           <thead>
             <tr>
             <th scope="col">#</th>
-            <th scope="col">name</th>
-            <th scope="col"> email</th>
-            <th scope="col">dayVisited</th>
-            <th scope="col">fMessage</th>
+            <th scope="col">Name</th>
+            <th scope="col"> Email</th>
+            <th scope="col">DateVisited</th>
+            <th scope="col">FeedbackType</th>
+            <th scope="col">Feedback</th>
             <th scope="col">Action</th>
             </tr>
           
@@ -134,9 +135,10 @@ handleSearchArea =(e) =>{
                     </td>
                 <td>{posts.email}</td>
                 <td>{posts.dayVisited}</td>
+                <td>{posts.feedbackType}</td>
                 <td>{posts.fMessage}</td>
                 <td>
-                  <a className="btn btn-warning" href={`/edit/${posts._id}`}>
+                  <a className="btn btn-warning" href={`/editf/${posts._id}`}>
                     <i className="fas fa-edit"></i>&nbsp;Edit
                   </a>
                   &nbsp;
@@ -152,7 +154,7 @@ handleSearchArea =(e) =>{
 
         </table>
 
-        <button className="btn btn-success"><a href="/add" style={{textDecoration:'none',color:'white'}}>Create New Post</a></button>
+        <button className="btn btn-success"><a href="/addf" style={{textDecoration:'none',color:'white'}}>Create New Post</a></button>
       </div>
       
     )

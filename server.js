@@ -56,7 +56,7 @@ const postRoutes = require('./routes/posts');
 //app config
 const app = express();
 const port = process.env.PORT || 8001;
-const connection_url = 'mongodb+srv://user_sandaru:sandaru123@feedback.hppjv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const connection_url = 'mongodb+srv://ITP_users:BmOeCla3ag6huxYm@cluster0.vmcdh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 //Middleware
 app.use(express.json());
